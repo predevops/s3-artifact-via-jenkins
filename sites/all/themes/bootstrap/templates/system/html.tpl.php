@@ -53,6 +53,7 @@
  *
  * @ingroup templates
  */
+global $base_url;
 ?><!DOCTYPE html>
 <html<?php print $html_attributes;?><?php print $rdf_namespaces;?>>
 <head>
@@ -72,6 +73,10 @@
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
+   <!--<div class="loader">
+    <img src="<?php //print $base_url; ?>/sites/all/themes/bootstrap/images/logo.png">
+<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>-->
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>

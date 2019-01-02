@@ -74,7 +74,7 @@
  * @ingroup templates
  */
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+<header id="navbar" role="banner" class="navbar navbar-default">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
       <?php if ($logo): ?>
@@ -114,7 +114,21 @@
     <?php endif; ?>
   </div>
 </header>
-
+<?php if($is_front) { ?>
+<div class="home-slider">
+<?php print render($page['home_slider']); ?>
+<div class="social-t-menu">
+<div class="container">
+  <div class="row">
+  <?php print render($page['social_icon']); ?></div>
+</div></div>
+</div>
+<div class="quick-enquiry">
+  <div class="container">
+  <div class="row">
+<?php print render($page['quick_enquiry']);?>
+</div></div></div>
+<?php } ?>
 <div class="main-container <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
@@ -141,7 +155,7 @@
       endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
+      <?php if ((!empty($title)) && (!$is_front)): ?>
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>

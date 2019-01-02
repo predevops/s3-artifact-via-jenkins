@@ -25,6 +25,18 @@ regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
+regions[home_slider]    = 'Home Page Slider'
+regions[social_icon]    = 'Social Media Menu'
+regions[quick_enquiry]    = 'Quick Enquiry'
+
+
+
+stylesheets[all][]= css/custom-animation.css
+stylesheets[all][]= css/style.css
+stylesheets[all][]= css/responsive.css
+
+
+scripts[]=js/script.js
 
 
 ;;;;;;;;;;;;;;;;;;;;;

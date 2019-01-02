@@ -1,0 +1,107 @@
+
+@-webkit-keyframes scroll-down-anim {
+ 0% {
+bottom: 2px;
+}
+ 50% {
+bottom: 7px;
+}
+ 100% {
+bottom: 2px;
+}
+}
+@-moz-keyframes scroll-down-anim {
+ 0% {
+bottom: 2px;
+}
+ 50% {
+bottom: 7px;
+}
+ 100% {
+bottom: 2px;
+}
+}
+@-o-keyframes scroll-down-anim {
+ 0% {
+bottom: 2px;
+}
+ 50% {
+bottom: 7px;
+}
+ 100% {
+bottom: 2px;
+}
+}
+@keyframes scroll-down-anim {
+ 0% {
+bottom: 2px;
+}
+ 50% {
+bottom: 7px;
+}
+ 100% {
+bottom: 2px;
+}
+}
+.loader>img.hides {
+	animation: showbanner 1s normal forwards ease-in-out;
+	-webkit-animation: showbanner 1s normal forwards ease-in-out;
+	-moz-animation: showbanner 1s normal forwards ease-in-out;
+}
+ @keyframes showbanner {
+0% {
+ transform: translateY(0);
+ -webkit-transform: translateY(0);
+ -moz-transform: translateY(0);
+ -ms-transform: translateY(0);
+ opacity: 0.8;
+}
+ 100% {
+transform: translateY(-300%);
+ -webkit-transform: translateY(-300%);
+ -moz-transform: translateY(-300%);
+ -ms-transform: translateY(-300%);
+ opacity: 0.1;
+}
+}
+.loader.hides {
+	animation: loaderss 1s normal forwards ease-in-out;
+	-webkit-animation: loaderss 1s normal forwards ease-in-out;
+	-moz-animation: loaderss 1s normal forwards ease-in-out;
+}
+@keyframes loaderss {
+0% {
+ transform: translate3d(0, 0, 0);
+ -webkit-transform: translate3d(0, 0, 0);
+ -moz-transform: translate3d(0, 0, 0);
+ -ms-transform: translate3d(0, 0, 0);
+}
+ 100% {
+ transform: translate3d(0, -100%, 0);
+ -webkit-transform: translate3d(0, -100%, 0);
+ -moz-transform: translate3d(0, -100%, 0);
+ -ms-transform: translate3d(0, -100%, 0);
+ background-color: #b9a060;
+}
+}
+.lds-roller.hides {
+	animation: roller 1s normal forwards ease-in-out;
+	-webkit-animation: roller 1s normal forwards ease-in-out;
+	-moz-animation: roller 1s normal forwards ease-in-out;
+}
+ @keyframes roller {
+0% {
+ transform: translateY(0);
+ -webkit-transform: translateY(0);
+ -moz-transform: translateY(0);
+ -ms-transform: translateY(0);
+ opacity: 0.8;
+}
+ 100% {
+transform: translateY(-300%);
+ -webkit-transform: translateY(-300%);
+ -moz-transform: translateY(-300%);
+ -ms-transform: translateY(-300%);
+ opacity: 0.1;
+}
+}
